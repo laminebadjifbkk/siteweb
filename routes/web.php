@@ -10,6 +10,8 @@ use App\Http\Controllers\Admin\ArticleController;
     return view('welcome');
 }); */
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/inscription', [HomeController::class, 'inscription'])->name('inscription');
+Route::get('/a-propos', [HomeController::class, 'apropos'])->name('a-propos');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');

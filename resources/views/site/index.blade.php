@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ONFP — Office National de Formation Professionnelle</title>
+    <title>ONFP - Office national de Formation professionnelle</title>
     <meta name="description"
         content="L'Office National de Formation Professionnelle du Sénégal : formations qualifiantes et certifiantes, certification, études, opérateurs et pôles régionaux.">
     <meta name="theme-color" content="#00853F">
@@ -63,9 +63,9 @@
             <nav class="main" aria-label="Navigation principale">
                 <ul>
                     <li><a href="{{ route('home') }}" aria-current="page">Accueil</a></li>
-                    <li class="has-sub"><a href="a-propos.html">L'Office</a>
+                    <li class="has-sub"><a href="{{ url('/a-propos') }}">L'Office</a>
                         <ul class="submenu">
-                            <li><a href="a-propos.html">Présentation & gouvernance</a></li>
+                            <li><a href="{{ url('/a-propos') }}">Présentation & gouvernance</a></li>
                             <li><a href="a-propos.html#mot-dg">Mot de la Directrice générale</a></li>
                             <li><a href="missions.html">Nos missions</a></li>
                             <li><a href="poles-regionaux.html">Pôles régionaux</a></li>
@@ -93,7 +93,7 @@
                         <circle cx="11" cy="11" r="7" />
                         <path d="m20 20-3.5-3.5" />
                     </svg></button>
-                <a href="inscription.html" class="nav-cta">S'inscrire à une formation</a>
+                <a href="{{ url('/inscription') }}" class="nav-cta">S'inscrire à une formation</a>
                 <button class="icon-btn burger" type="button" aria-label="Ouvrir le menu" aria-controls="drawer"
                     aria-expanded="false"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"
                         stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
@@ -119,7 +119,7 @@
             </div>
             <ul>
                 <li><a href="{{ route('home') }}">Accueil</a></li>
-                <li><a href="a-propos.html">L'Office</a>
+                <li><a href="{{ url('/a-propos') }}">L'Office</a>
                     <ul>
                         <li><a href="a-propos.html#mot-dg">Mot de la Directrice générale</a></li>
                         <li><a href="missions.html">Nos missions</a></li>
@@ -628,7 +628,7 @@
             </div>
             <div class="fcol">
                 <h4>L'Office</h4>
-                <a href="a-propos.html">Présentation</a>
+                <a href="{{ url('/a-propos') }}">Présentation</a>
                 <a href="missions.html">Nos missions</a>
                 <a href="poles-regionaux.html">Pôles régionaux</a>
                 <a href="actualites.html">Actualités</a>
