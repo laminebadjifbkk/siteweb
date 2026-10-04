@@ -1,31 +1,15 @@
-<x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600">
-        {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
-    </div>
-
+<x-auth-layout title="Vérification e-mail" heading="Vérifiez votre e-mail" subtitle="Merci de votre inscription ! Cliquez sur le lien que nous venons de vous envoyer par e-mail. Si vous ne l'avez pas reçu, nous pouvons vous en envoyer un autre.">
     @if (session('status') == 'verification-link-sent')
-        <div class="mb-4 font-medium text-sm text-green-600">
-            {{ __('A new verification link has been sent to the email address you provided during registration.') }}
-        </div>
+        <div class="notice" role="status">Un nouveau lien de vérification a été envoyé à l'adresse indiquée lors de l'inscription.</div>
     @endif
-
-    <div class="mt-4 flex items-center justify-between">
-        <form method="POST" action="{{ route('verification.send') }}">
+    <div class="split">
+        <form method="POST" action="{{ route('verification.send') }}" data-once>
             @csrf
-
-            <div>
-                <x-primary-button>
-                    {{ __('Resend Verification Email') }}
-                </x-primary-button>
-            </div>
+            <button class="go" type="submit">Renvoyer l'e-mail de vérification</button>
         </form>
-
-        <form method="POST" action="{{ route('logout') }}">
+        <form method="POST" action="{{ route('logout') }}" style="text-align:center">
             @csrf
-
-            <button type="submit" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                {{ __('Log Out') }}
-            </button>
+            <button class="lnk" type="submit">Se déconnecter</button>
         </form>
     </div>
-</x-guest-layout>
+</x-auth-layout>

@@ -544,7 +544,7 @@
 
                 <div class="card">
                     <h2>Référencement (SEO)</h2>
-                    <div class="gp" aria-label="Aperçu Google"><small id="gu">monsite.com ›
+                    <div class="gp" aria-label="Aperçu Google"><small id="gu">ONFP .com ›
                             blog</small><b id="gt">Titre de l'article</b>
                         <p id="gd">La description de votre article apparaîtra ici.</p>
                     </div>
@@ -737,7 +737,7 @@
                 d = $('#md').value || $('#exc').value || 'La description de votre article apparaîtra ici.';
             $('#gt').textContent = t.slice(0, 70);
             $('#gd').textContent = d.slice(0, 170);
-            $('#gu').textContent = 'monsite.com › blog › ' + ($('#slug').value || 'article');
+            $('#gu').textContent = 'ONFP .com › blog › ' + ($('#slug').value || 'article');
             $('#mtn').textContent = $('#mt').value.length + ' / 60';
             meter('#mtm', $('#mt').value.length, 60, 45);
             $('#mdn').textContent = $('#md').value.length + ' / 160';

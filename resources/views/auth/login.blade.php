@@ -414,7 +414,7 @@
 
 <body>
     <aside class="hero">
-        <div class="brand"><i>◆</i> MonSite Admin</div>
+        <div class="brand"><i>◆</i> ONFP ADMIN</div>
         <div>
             <h2>Gérez le contenu de votre site en toute simplicité</h2>
             <p>Connectez-vous pour rédiger, relire et publier vos articles, et suivre la fréquentation du site.</p>
@@ -424,7 +424,7 @@
                 <li>Statistiques de fréquentation</li>
             </ul>
         </div>
-        <small>© {{ date('Y') }} MonSite. Accès réservé à l'équipe.</small>
+        <small>© {{ date('Y') }} ONFP . Accès réservé à l'équipe.</small>
     </aside>
 
     <main>
@@ -438,7 +438,7 @@
 
         <div class="wrap">
             <section class="card">
-                <div class="brand m-brand"><i>◆</i> MonSite Admin</div>
+                <div class="brand m-brand"><i>◆</i> ONFP ADMIN</div>
                 <h1>Connexion</h1>
                 <p class="sub">Entrez vos identifiants pour accéder à l'administration.</p>
 

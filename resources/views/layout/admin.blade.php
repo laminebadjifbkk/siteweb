@@ -714,7 +714,7 @@
 
 <body>
     <aside id="side">
-        <div class="brand"><i>◆</i> MonSite Admin</div>
+        <div class="brand"><i>◆</i> ONFP ADMIN</div>
         <nav aria-label="Navigation principale">
             <small>Publication</small>
             <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'on' : '' }}"
