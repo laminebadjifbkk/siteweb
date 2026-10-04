@@ -107,7 +107,7 @@
 @push('scripts')
     <script>
         /* Données de démonstration.
-       Laravel : const articles = @json($articles); (idem pour les autres tableaux) */
+           Laravel : const articles = @json($articles); (idem pour les autres tableaux) */
         const articles = [{
                 t: 'Rapport annuel d\'activité 2025',
                 r: 'Rapports',
@@ -254,7 +254,7 @@
                 `<path d="${path(pv)}L${X(n-1)},${T+ih}L${L},${T+ih}Z" fill="var(--c2)" opacity=".12"/><path d="${path(pv)}" fill="none" stroke="var(--c2)" stroke-width="2.5" stroke-linejoin="round"/><path d="${path(pu)}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>` +
                 pv.map((q, i) =>
                     `<circle cx="${q[0]}" cy="${q[1]}" r="4" fill="var(--surface)" stroke="var(--c2)" stroke-width="2"><title>${d.l[i]} : ${fmt(d.v[i])} visites, ${fmt(d.u[i])} visiteurs uniques</title></circle>`
-                    ).join('')
+                ).join('')
         }
         document.querySelectorAll('.seg[aria-label=Période] button').forEach(b => b.onclick = () => {
             document.querySelectorAll('.seg[aria-label=Période] button').forEach(x => x.classList.remove('on'));
@@ -269,7 +269,7 @@
                 h = '';
             cats.forEach(([n, v, c]) => {
                 h +=
-                `<circle cx="21" cy="21" r="15.9155" fill="none" stroke="var(${c})" stroke-width="6" stroke-dasharray="${v} ${100-v}" stroke-dashoffset="${off}"/>`;
+                    `<circle cx="21" cy="21" r="15.9155" fill="none" stroke="var(${c})" stroke-width="6" stroke-dasharray="${v} ${100-v}" stroke-dashoffset="${off}"/>`;
                 off -= v
             });
             $('#donut').innerHTML = h +
@@ -286,7 +286,7 @@
             const r = articles.filter(o => (st === 'all' || o.s === st) && (o.t + o.a + o.r).toLowerCase().includes(q));
             $('#rows').innerHTML = r.map(o =>
                 `<tr><td><a class="t" href="article-create.html">${o.t}</a><small>${o.r}</small></td><td>${o.a}</td><td><span class="tag s-${o.s}">${sl[o.s]}</span></td><td>${o.d}</td><td>${o.v?fmt(o.v):'—'}</td></tr>`
-                ).join('');
+            ).join('');
             $('#none').hidden = r.length > 0
         }
         document.querySelectorAll('#flt button').forEach(b => b.onclick = () => {
@@ -301,7 +301,7 @@
         /* Listes */
         $('#top').innerHTML = topRead.map(([n, v]) =>
             `<div class="bar"><div class="t"><span>${n}</span><b>${fmt(v)}</b></div><div class="tr"><div style="width:${v/topRead[0][1]*100}%"></div></div></div>`
-            ).join('');
+        ).join('');
         $('#plan').innerHTML = plan.map(([j, m, t, i]) =>
             `<li><div class="day"><b>${j}</b><span>${m}</span></div><div>${t}<small>${i}</small></div></li>`).join('');
         $('#act').innerHTML = acts.map(([i, t, w]) =>
