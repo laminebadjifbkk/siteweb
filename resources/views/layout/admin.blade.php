@@ -680,6 +680,34 @@
                 transition: none !important
             }
         }
+
+        .lo {
+            margin-top: -10px
+        }
+
+        .lo button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 10px;
+            border-radius: 8px;
+            border: 0;
+            background: none;
+            color: var(--side-ink);
+            text-align: left
+        }
+
+        .lo button:hover {
+            background: rgba(255, 255, 255, .07);
+            color: #fff
+        }
+
+        .lo svg {
+            width: 18px;
+            height: 18px;
+            flex: none
+        }
     </style>
     @stack('styles')
 </head>
@@ -711,6 +739,18 @@
             <div class="av">AD</div>
             <div><b>{{ Auth::user()->name }}</b><span>Rédacteur en chef</span></div>
         </div>
+        <form class="lo" method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                    <path d="M16 17l5-5-5-5" />
+                    <path d="M21 12H9" />
+                </svg>
+                Se déconnecter
+            </button>
+        </form>
     </aside>
 
     <main>
