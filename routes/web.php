@@ -12,6 +12,11 @@ use App\Http\Controllers\Admin\ArticleController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/inscription', [HomeController::class, 'inscription'])->name('inscription');
 Route::get('/a-propos', [HomeController::class, 'apropos'])->name('a-propos');
+Route::get('/poles-regionaux', [HomeController::class, 'polesregionaux'])->name('poles-regionaux');
+Route::get('/missions', [HomeController::class, 'missions'])->name('missions');
+Route::get('/documentation', [HomeController::class, 'documentation'])->name('documentation');
+Route::get('/actualites', [HomeController::class, 'actualites'])->name('actualites');
+Route::get('/operateurs', [HomeController::class, 'operateurs'])->name('operateurs');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');

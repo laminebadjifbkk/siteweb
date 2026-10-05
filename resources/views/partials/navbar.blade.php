@@ -37,16 +37,17 @@
         </a>
         <nav class="main" aria-label="Navigation principale">
             <ul>
-                <li><a href="{{ route('home') }}" @if ($active === 'accueil') aria-current="page" @endif>Accueil</a>
+                <li><a href="{{ route('home') }}"
+                        @if ($active === 'accueil') aria-current="page" @endif>Accueil</a>
                 </li>
                 <li class="has-sub"><a href="{{ url('/a-propos') }}"
                         @if ($active === 'apropos') aria-current="page" @endif>L'Office</a>
                     <ul class="submenu">
                         <li><a href="{{ url('/a-propos') }}">Présentation & gouvernance</a></li>
-                        <li><a href="a-propos.html#mot-dg">Mot de la Directrice générale</a></li>
-                        <li><a href="missions.html">Nos missions</a></li>
-                        <li><a href="poles-regionaux.html">Pôles régionaux</a></li>
-                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="{{ url('apropos') }}#mot-dg">Mot de la Directrice général</a></li>
+                        <li><a href="{{ url('missions') }}">Nos missions</a></li>
+                        <li><a href="{{ url('poles-regionaux') }}">Pôles régionaux</a></li>
+                        <li><a href="{{ url('documentation') }}">Documentation</a></li>
                     </ul>
                 </li>
                 <li class="has-sub"><a href="formations.html"
@@ -58,19 +59,21 @@
                         <li><a href="inscription.html">Pré-inscription en ligne</a></li>
                     </ul>
                 </li>
-                <li><a href="operateurs.html" @if ($active === 'operateurs') aria-current="page" @endif>Opérateurs</a>
+                <li><a href="{{ url('operateurs') }}"
+                        @if ($active === 'operateurs') aria-current="page" @endif>Opérateurs</a>
                 </li>
-                <li><a href="actualites.html" @if ($active === 'actualites') aria-current="page" @endif>Actualités</a>
+                <li><a href="{{ url('actualites') }}"
+                        @if ($active === 'actualites') aria-current="page" @endif>Actualités</a>
                 </li>
-                <li><a href="marches-publics.html"
-                        @if ($active === 'marches') aria-current="page" @endif>Marchés publics</a></li>
+                <li><a href="marches-publics.html" @if ($active === 'marches') aria-current="page" @endif>Marchés
+                        publics</a></li>
                 <li><a href="contact.html" @if ($active === 'contact') aria-current="page" @endif>Contact</a></li>
             </ul>
         </nav>
         <div class="nav-actions">
-            <button class="icon-btn" type="button" data-open-search aria-label="Rechercher"><svg
-                    viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
-                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <button class="icon-btn" type="button" data-open-search aria-label="Rechercher"><svg viewBox="0 0 24 24"
+                    width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <circle cx="11" cy="11" r="7" />
                     <path d="m20 20-3.5-3.5" />
                 </svg></button>
@@ -102,9 +105,9 @@
             <li><a href="{{ url('/a-propos') }}">L'Office</a>
                 <ul>
                     <li><a href="a-propos.html#mot-dg">Mot de la Directrice générale</a></li>
-                    <li><a href="missions.html">Nos missions</a></li>
-                    <li><a href="poles-regionaux.html">Pôles régionaux</a></li>
-                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="{{ url('missions') }}">Nos missions</a></li>
+                    <li><a href="{{ url('poles-regionaux') }}">Pôles régionaux</a></li>
+                    <li><a href="{{ url('documentation') }}">Documentation</a></li>
                 </ul>
             </li>
             <li><a href="formations.html">Formations</a>
@@ -114,12 +117,13 @@
                     <li><a href="inscription.html">Pré-inscription en ligne</a></li>
                 </ul>
             </li>
-            <li><a href="operateurs.html">Opérateurs</a></li>
-            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="{{ url('operateurs') }}">Opérateurs</a></li>
+            <li><a href="{{ url('actualites') }}">Actualités</a></li>
             <li><a href="marches-publics.html">Marchés publics</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <a href="{{ url('/inscription') }}" class="btn btn-orange" style="width:100%;justify-content:center">S'inscrire
+        <a href="{{ url('/inscription') }}" class="btn btn-orange"
+            style="width:100%;justify-content:center">S'inscrire
             à une formation</a>
     </div>
 </div>

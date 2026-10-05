@@ -32,9 +32,9 @@
         <div class="fcol">
             <h4>L'Office</h4>
             <a href="{{ url('/a-propos') }}">Présentation</a>
-            <a href="missions.html">Nos missions</a>
-            <a href="poles-regionaux.html">Pôles régionaux</a>
-            <a href="actualites.html">Actualités</a>
+            <a href="{{ url('missions')}}">Nos missions</a>
+            <a href="{{ url('poles-regionaux') }}">Pôles régionaux</a>
+            <a href="{{ url('actualites')}}">Actualités</a>
             <a href="marches-publics.html">Marchés publics</a>
         </div>
         <div class="fcol">
@@ -42,7 +42,7 @@
             <a href="formations.html">Catalogue des formations</a>
             <a href="inscription.html">Pré-inscription</a>
             <a href="certification.html">Certification & VAE</a>
-            <a href="operateurs.html">Opérateurs de formation</a>
+            <a href="{{ url('operateurs') }}">Opérateurs de formation</a>
             <a href="https://sigof.onfp.sn" rel="noopener">Plateforme SIGOF</a>
             <a href="documentation.html">Documentation</a>
         </div>

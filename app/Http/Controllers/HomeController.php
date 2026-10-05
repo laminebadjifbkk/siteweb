@@ -10,4 +10,9 @@ class HomeController extends Controller
     public function index(): View { return view('site.index'); }
     public function inscription(): View { return view('site.inscription'); }
     public function apropos(): View { return view('site.a-propos'); }
+    public function polesregionaux(): View { return view('site.poles-regionaux'); }
+    public function missions(): View { return view('site.missions'); }
+    public function documentation(): View { return view('site.documentation'); }
+    public function actualites(): View { return view('site.actualites'); }
+    public function operateurs(): View { return view('site.operateurs'); }
 }
