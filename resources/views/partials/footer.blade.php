@@ -3,7 +3,7 @@
             style="background:#FDB913"></i><i style="background:#E4032E"></i></div>
     <div class="container footer-inner">
         <div class="footer-brand">
-            <img src="{{ asset('assets/img/logo-onfp-240.webp') }}" alt="Logo ONFP" width="81" height="84">
+            <img src="{{ asset('assets/img/ONFP_logo_header.svg') }}" alt="Logo ONFP" width="81" height="84">
             <p>Établissement public créé par la loi n°86-44 du 11 août 1986, l'Office National de Formation
                 Professionnelle est la référence de la formation professionnelle au Sénégal.</p>
             <div class="socials">
@@ -64,8 +64,8 @@
         <div class="container">
             <span>© <span data-year>2026</span> Office National de Formation Professionnelle — Tous droits
                 réservés</span>
-            <span><a href="mentions-legales.html">Mentions légales</a><a
-                    href="mentions-legales.html#donnees">Données personnelles</a><a href="plan-du-site.html">Plan
+            <span><a href="{{ url('mentions-legales') }}">Mentions légales</a><a
+                    href="{{ url('mentions-legales') }}#donnees">Données personnelles</a><a href="{{ url('plan-du-site') }}">Plan
                     du site</a></span>
         </div>
     </div>
@@ -74,7 +74,7 @@
 <button class="to-top" type="button" aria-label="Retour en haut de page">↑</button>
 <div class="cookie" role="region" aria-label="Cookies">
     <p>Ce site utilise uniquement des cookies techniques nécessaires à son fonctionnement et des mesures d'audience
-        anonymisées. <a href="mentions-legales.html#cookies">En savoir plus</a></p>
+        anonymisées. <a href="{{ url('mentions-legales') }}#cookies">En savoir plus</a></p>
     <button class="btn btn-solid btn-sm" type="button" data-cookie-ok>J'ai compris</button>
 </div>
 <script src="{{ asset('assets/js/main.js') }}" defer></script>

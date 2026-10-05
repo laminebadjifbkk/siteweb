@@ -3,7 +3,7 @@
     $active = $active ?? null;
 @endphp
 
-<a class="skip-link" href="#contenu">Aller au contenu</a>
+{{-- <a class="skip-link" href="#contenu">Aller au contenu</a> --}}
 
 <div class="badge-bar">
     <div class="container">
@@ -32,7 +32,7 @@
 <header class="site">
     <div class="container nav-wrap">
         <a class="brand" href="{{ route('home') }}" aria-label="ONFP — Accueil">
-            <img src="{{ asset('assets/img/logo-onfp-240.webp') }}"
+            <img src="{{ asset('assets/img/ONFP_logo_header.svg') }}"
                 alt="Logo ONFP — Office National de Formation Professionnelle" width="64" height="67">
         </a>
         <nav class="main" aria-label="Navigation principale">

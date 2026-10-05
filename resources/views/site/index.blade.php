@@ -44,7 +44,7 @@
                             les demandeurs d'emploi sur l'ensemble du territoire national, pour une insertion
                             professionnelle durable.</p>
                         <div class="hero-ctas"><a href="{{ url('formations') }}" class="btn btn-solid">Découvrir nos
-                                formations</a><a href="missions.html" class="btn btn-outline">Nos missions</a></div>
+                                formations</a><a href="{{ url('missions') }}" class="btn btn-outline">Nos missions</a></div>
                     </div>
                     <div class="hero-slide">
                         <div class="hero-tag"><span class="dot" style="background:var(--onfp-orange)"></span>
@@ -102,9 +102,9 @@
                         <h2>Nos missions</h2>
                         <p>Un établissement public au service de la qualification professionnelle et de l'emploi.</p>
                     </div>
-                    <a href="missions.html" class="link-more">Voir toutes les missions →</a>
+                    <a href="{{ url('missions') }}" class="link-more">Voir toutes les missions →</a>
                 </div>
-                <div class="missions-grid"><a class="mission-card" href="missions.html#etudes"><span
+                <div class="missions-grid"><a class="mission-card" href="{{ url('missions') }}#etudes"><span
                             class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -114,7 +114,7 @@
                         <h3>Étude & recherche</h3>
                         <p>Études sur l'emploi, les qualifications et l'adéquation formation-emploi pour orienter
                             l'offre nationale.</p>
-                    </a><a class="mission-card" href="missions.html#formation"><span class="ico"><svg
+                    </a><a class="mission-card" href="{{ url('missions') }}#formation"><span class="ico"><svg
                                 viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -123,7 +123,7 @@
                             </svg></span>
                         <h3>Formation & qualification</h3>
                         <p>Conception, financement et coordination d'actions de formation initiale et continue.</p>
-                    </a><a class="mission-card" href="missions.html#certification"><span class="ico"><svg
+                    </a><a class="mission-card" href="{{ url('missions') }}#certification"><span class="ico"><svg
                                 viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -134,7 +134,7 @@
                             </svg></span>
                         <h3>Évaluation & certification</h3>
                         <p>Évaluation des compétences et délivrance de titres professionnels reconnus.</p>
-                    </a><a class="mission-card" href="missions.html#documentation"><span class="ico"><svg
+                    </a><a class="mission-card" href="{{ url('missions') }}#documentation"><span class="ico"><svg
                                 viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -144,7 +144,7 @@
                         <h3>Documentation & édition</h3>
                         <p>Production et diffusion de référentiels, supports pédagogiques et publications techniques.
                         </p>
-                    </a><a class="mission-card" href="missions.html#construction"><span class="ico"><svg
+                    </a><a class="mission-card" href="{{ url('missions') }}#construction"><span class="ico"><svg
                                 viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">

@@ -20,4 +20,6 @@ class HomeController extends Controller
     public function contact(): View { return view('site.contact'); }
     public function certification(): View { return view('site.certification'); }
     public function entreprises(): View { return view('site.entreprises'); }
+    public function mentionslegales(): View { return view('site.mentions-legales'); }
+    public function plandusite(): View { return view('site.plan-du-site'); }
 }

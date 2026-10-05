@@ -22,6 +22,8 @@ Route::get('/marches-publics', [HomeController::class, 'marchespublics'])->name(
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/certification', [HomeController::class, 'certification'])->name('certification');
 Route::get('/entreprises', [HomeController::class, 'entreprises'])->name('entreprises');
+Route::get('/mentions-legales', [HomeController::class, 'mentionslegales'])->name('mentions-legales');
+Route::get('/plan-du-site', [HomeController::class, 'plandusite'])->name('plan-du-site');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
