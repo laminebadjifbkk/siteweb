@@ -35,16 +35,16 @@
             <a href="{{ url('missions')}}">Nos missions</a>
             <a href="{{ url('poles-regionaux') }}">Pôles régionaux</a>
             <a href="{{ url('actualites')}}">Actualités</a>
-            <a href="marches-publics.html">Marchés publics</a>
+            <a href="{{ url('marches-publics') }}">Marchés publics</a>
         </div>
         <div class="fcol">
             <h4>Services</h4>
-            <a href="formations.html">Catalogue des formations</a>
-            <a href="inscription.html">Pré-inscription</a>
-            <a href="certification.html">Certification & VAE</a>
+            <a href="{{ url('formations') }}">Catalogue des formations</a>
+            <a href="{{ url('inscription') }}">Pré-inscription</a>
+            <a href="{{ url('certification') }}">Certification & VAE</a>
             <a href="{{ url('operateurs') }}">Opérateurs de formation</a>
             <a href="https://sigof.onfp.sn" rel="noopener">Plateforme SIGOF</a>
-            <a href="documentation.html">Documentation</a>
+            <a href="{{ url('documentation') }}">Documentation</a>
         </div>
         <div class="fcol">
             <h4>Contact</h4>

@@ -15,7 +15,7 @@
         content="Trouvez une formation qualifiante, certifiante, en apprentissage ou continue dans les pôles régionaux de l'ONFP.">
     <meta property="og:image" content="https://www.onfp.sn/assets/img/logo-onfp.png">
     <meta property="og:locale" content="fr_SN">
-    <link rel="canonical" href="https://www.onfp.sn/formations.html">
+    <link rel="canonical" href="https://www.onfp.sn/{{ url('formations') }}">
     <link rel="icon" href="assets/img/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="assets/img/favicon-32.png">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -48,10 +48,10 @@
     <a class="brand" href="index.html" aria-label="ONFP — Accueil">
       <img src="assets/img/logo-onfp-240.webp" alt="Logo ONFP — Office National de Formation Professionnelle" width="64" height="67">
     </a>
-    <nav class="main" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="a-propos.html">L'Office</a><ul class="submenu"><li><a href="a-propos.html">Présentation & gouvernance</a></li><li><a href="a-propos.html#mot-dg">Mot de la Directrice générale</a></li><li><a href="missions.html">Nos missions</a></li><li><a href="poles-regionaux.html">Pôles régionaux</a></li><li><a href="documentation.html">Documentation</a></li></ul></li><li class="has-sub"><a href="formations.html" aria-current="page">Formations</a><ul class="submenu"><li><a href="formations.html">Catalogue des formations</a></li><li><a href="certification.html">Certification & VAE</a></li><li><a href="entreprises.html">Entreprises & employeurs</a></li><li><a href="inscription.html">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="marches-publics.html">Marchés publics</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <nav class="main" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="{{ url('/a-propos') }}">L'Office</a><ul class="submenu"><li><a href="{{ url('/a-propos') }}">Présentation & gouvernance</a></li><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="missions.html">Nos missions</a></li><li><a href="poles-regionaux.html">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li class="has-sub"><a href="{{ url('formations') }}" aria-current="page">Formations</a><ul class="submenu"><li><a href="{{ url('formations') }}">Catalogue des formations</a></li><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}">Contact</a></li></ul></nav>
     <div class="nav-actions">
       <button class="icon-btn" type="button" data-open-search aria-label="Rechercher"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
-      <a href="inscription.html" class="nav-cta">S'inscrire à une formation</a>
+      <a href="{{ url('inscription') }}" class="nav-cta">S'inscrire à une formation</a>
       <button class="icon-btn burger" type="button" aria-label="Ouvrir le menu" aria-controls="drawer" aria-expanded="false"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -65,8 +65,8 @@
       <img src="assets/img/logo-onfp-240.webp" alt="ONFP" style="height:52px;width:auto">
       <button class="icon-btn" type="button" data-close-drawer aria-label="Fermer le menu"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
-    <ul><li><a href="index.html">Accueil</a></li><li><a href="a-propos.html">L'Office</a><ul><li><a href="a-propos.html#mot-dg">Mot de la Directrice générale</a></li><li><a href="missions.html">Nos missions</a></li><li><a href="poles-regionaux.html">Pôles régionaux</a></li><li><a href="documentation.html">Documentation</a></li></ul></li><li><a href="formations.html">Formations</a><ul><li><a href="certification.html">Certification & VAE</a></li><li><a href="entreprises.html">Entreprises & employeurs</a></li><li><a href="inscription.html">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="marches-publics.html">Marchés publics</a></li><li><a href="contact.html">Contact</a></li></ul>
-    <a href="inscription.html" class="btn btn-orange" style="width:100%;justify-content:center">S'inscrire à une formation</a>
+    <ul><li><a href="index.html">Accueil</a></li><li><a href="{{ url('/a-propos') }}">L'Office</a><ul><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="missions.html">Nos missions</a></li><li><a href="poles-regionaux.html">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li><a href="{{ url('formations') }}">Formations</a><ul><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}">Contact</a></li></ul>
+    <a href="{{ url('inscription') }}" class="btn btn-orange" style="width:100%;justify-content:center">S'inscrire à une formation</a>
   </div>
 </div>
 
@@ -160,7 +160,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=coupe-couture">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=coupe-couture">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=coupe-couture">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="energie" data-type="certifiante"
                         data-pole="thies">
@@ -182,7 +182,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=electricite-batiment">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=electricite-batiment">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=electricite-batiment">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="energie" data-type="certifiante"
                         data-pole="nord-est">
@@ -203,7 +203,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=solaire-pv">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=solaire-pv">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=solaire-pv">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="btp" data-type="qualifiante" data-pole="centre">
                         <div class="meta"><span class="pill orange">Qualifiante</span><span class="pill">BTP &
@@ -223,7 +223,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=maconnerie">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=maconnerie">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=maconnerie">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="agri" data-type="qualifiante"
                         data-pole="diourbel-louga">
@@ -244,7 +244,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=transformation-cereales">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=transformation-cereales">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=transformation-cereales">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="agri" data-type="apprentissage"
                         data-pole="nord">
@@ -265,7 +265,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=maraichage">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=maraichage">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=maraichage">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="numerique" data-type="certifiante"
                         data-pole="national">
@@ -286,7 +286,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=developpement-web">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=developpement-web">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=developpement-web">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="numerique" data-type="qualifiante"
                         data-pole="sud">
@@ -307,7 +307,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=maintenance-info">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=maintenance-info">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=maintenance-info">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="meca" data-type="apprentissage" data-pole="est">
                         <div class="meta"><span class="pill red">Apprentissage</span><span class="pill">Mécanique
@@ -327,7 +327,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=mecanique-auto">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=mecanique-auto">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=mecanique-auto">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="meca" data-type="certifiante" data-pole="thies">
                         <div class="meta"><span class="pill green">Certifiante</span><span class="pill">Mécanique
@@ -348,7 +348,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=froid-clim">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=froid-clim">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=froid-clim">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="tourisme" data-type="qualifiante"
                         data-pole="sud">
@@ -369,7 +369,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=hotellerie">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=hotellerie">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=hotellerie">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="gestion" data-type="continue"
                         data-pole="national">
@@ -390,7 +390,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=gestion-pme">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=gestion-pme">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=gestion-pme">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="peche" data-type="qualifiante"
                         data-pole="thies">
@@ -411,7 +411,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=transformation-halieutique">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=transformation-halieutique">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=transformation-halieutique">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="meca" data-type="certifiante"
                         data-pole="centre">
@@ -432,7 +432,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=soudure">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=soudure">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=soudure">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="btp" data-type="continue" data-pole="national">
                         <div class="meta"><span class="pill ">Formation continue</span><span class="pill">BTP &
@@ -452,7 +452,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=secourisme-hse">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=secourisme-hse">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=secourisme-hse">S'inscrire</a></div>
                     </article>
                 </div>
                 <div class="empty-state">Aucune formation ne correspond à vos critères. <button type="button"
@@ -509,14 +509,14 @@
                     <details>
                         <summary>Quel document reçoit-on à la fin de la formation ?</summary>
                         <div class="acc-body">Selon la filière, une attestation de formation ou un titre professionnel
-                            délivré après évaluation. Voir la page <a href="certification.html">Certification &
+                            délivré après évaluation. Voir la page <a href="{{ url('certification') }}">Certification &
                                 VAE</a>.</div>
                     </details>
                     <details>
                         <summary>Puis-je me former tout en travaillant ?</summary>
                         <div class="acc-body">Oui : la formation continue et l'apprentissage sont conçus pour les
                             actifs. Votre employeur peut également solliciter l'Office via l'espace <a
-                                href="entreprises.html">Entreprises</a>.</div>
+                                href="{{ url('entreprises') }}">Entreprises</a>.</div>
                     </details>
                 </div>
             </div>
@@ -550,20 +550,20 @@
             </div>
             <div class="fcol">
                 <h4>L'Office</h4>
-                <a href="a-propos.html">Présentation</a>
+                <a href="{{ url('/a-propos') }}">Présentation</a>
                 <a href="missions.html">Nos missions</a>
                 <a href="poles-regionaux.html">Pôles régionaux</a>
                 <a href="actualites.html">Actualités</a>
-                <a href="marches-publics.html">Marchés publics</a>
+                <a href="{{ url('marches-publics') }}">Marchés publics</a>
             </div>
             <div class="fcol">
                 <h4>Services</h4>
-                <a href="formations.html">Catalogue des formations</a>
-                <a href="inscription.html">Pré-inscription</a>
-                <a href="certification.html">Certification & VAE</a>
+                <a href="{{ url('formations') }}">Catalogue des formations</a>
+                <a href="{{ url('inscription') }}">Pré-inscription</a>
+                <a href="{{ url('certification') }}">Certification & VAE</a>
                 <a href="operateurs.html">Opérateurs de formation</a>
                 <a href="https://sigof.onfp.sn" rel="noopener">Plateforme SIGOF</a>
-                <a href="documentation.html">Documentation</a>
+                <a href="{{ url('documentation') }}">Documentation</a>
             </div>
             <div class="fcol">
                 <h4>Contact</h4>

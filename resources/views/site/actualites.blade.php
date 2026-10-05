@@ -141,8 +141,8 @@
                         communication.</p>
                 </div>
                 <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-green"
-                        href="documentation.html">Communiqués & dossiers</a><a class="btn btn-outline"
-                        href="contact.html?objet=presse">Contact presse</a></div>
+                        href="{{ url('documentation') }}">Communiqués & dossiers</a><a class="btn btn-outline"
+                        href="{{ url('contact') }}?objet=presse">Contact presse</a></div>
             </div>
         </section>
     </main>

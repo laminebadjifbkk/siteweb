@@ -43,7 +43,7 @@
                         <p class="lead">L'Office National de Formation Professionnelle qualifie les travailleurs et
                             les demandeurs d'emploi sur l'ensemble du territoire national, pour une insertion
                             professionnelle durable.</p>
-                        <div class="hero-ctas"><a href="formations.html" class="btn btn-solid">Découvrir nos
+                        <div class="hero-ctas"><a href="{{ url('formations') }}" class="btn btn-solid">Découvrir nos
                                 formations</a><a href="missions.html" class="btn btn-outline">Nos missions</a></div>
                     </div>
                     <div class="hero-slide">
@@ -54,7 +54,7 @@
                             à Dakar pour rapprocher la formation et l'emploi. <em class="todo">[dates exactes]</em>
                         </p>
                         <div class="hero-ctas"><a href="article.html" class="btn btn-solid">Programme du forum</a><a
-                                href="contact.html" class="btn btn-outline">Devenir exposant</a></div>
+                                href="{{ url('contact') }}" class="btn btn-outline">Devenir exposant</a></div>
                     </div>
                     <div class="hero-slide">
                         <div class="hero-tag"><span class="dot" style="background:var(--onfp-red)"></span>
@@ -62,8 +62,8 @@
                         <h1>Sessions 2026-2027 : pré-inscrivez-vous en ligne.</h1>
                         <p class="lead">Choisissez votre filière, votre pôle régional et déposez votre candidature en
                             quelques minutes. Un conseiller vous recontacte.</p>
-                        <div class="hero-ctas"><a href="inscription.html" class="btn btn-solid">Je me
-                                pré-inscris</a><a href="formations.html" class="btn btn-outline">Voir le catalogue</a>
+                        <div class="hero-ctas"><a href="{{ url('inscription') }}" class="btn btn-solid">Je me
+                                pré-inscris</a><a href="{{ url('formations') }}" class="btn btn-outline">Voir le catalogue</a>
                         </div>
                     </div>
                     <div class="slide-dots" role="tablist" aria-label="Choisir une annonce"></div>
@@ -165,9 +165,9 @@
                         <p>Filières qualifiantes, certifiantes, apprentissage et formation continue, près de chez vous.
                         </p>
                     </div>
-                    <a href="formations.html" class="link-more">Tout le catalogue →</a>
+                    <a href="{{ url('formations') }}" class="link-more">Tout le catalogue →</a>
                 </div>
-                <form class="filters" action="formations.html" method="get" style="background:var(--card)">
+                <form class="filters" action="{{ url('formations') }}" method="get" style="background:var(--card)">
                     <div class="field"><label for="h-q">Mot-clé</label><input id="h-q" name="q"
                             type="search" placeholder="ex. électricité, couture…"></div>
                     <div class="field"><label for="h-dom">Domaine</label><select id="h-dom" name="domaine">
@@ -221,7 +221,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=coupe-couture">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=coupe-couture">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=coupe-couture">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="energie" data-type="certifiante"
                         data-pole="thies">
@@ -243,7 +243,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=electricite-batiment">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=electricite-batiment">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=electricite-batiment">S'inscrire</a></div>
                     </article>
                     <article class="course" data-item data-domaine="energie" data-type="certifiante"
                         data-pole="nord-est">
@@ -264,7 +264,7 @@
                         <div class="card-foot"><a class="btn btn-green btn-sm"
                                 href="formation-detail.html?f=solaire-pv">Voir la fiche</a><a
                                 class="btn btn-outline btn-sm"
-                                href="inscription.html?formation=solaire-pv">S'inscrire</a></div>
+                                href="{{ url('inscription') }}?formation=solaire-pv">S'inscrire</a></div>
                     </article>
                 </div>
             </div>
@@ -292,7 +292,7 @@
                                 agents.</p>
                         </div>
                     </a>
-                    <a class="platform" href="inscription.html"><span class="ico"><svg viewBox="0 0 24 24"
+                    <a class="platform" href="{{ url('inscription') }}"><span class="ico"><svg viewBox="0 0 24 24"
                                 width="22" height="22" fill="none" stroke="currentColor"
                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
                                 aria-hidden="true">
@@ -306,7 +306,7 @@
                             <p>Déposez votre candidature à une session de formation en quelques minutes.</p>
                         </div>
                     </a>
-                    <a class="platform" href="certification.html#verifier"><span class="ico"><svg
+                    <a class="platform" href="{{ url('certification') }}#verifier"><span class="ico"><svg
                                 viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -436,7 +436,7 @@
                         <h3 style="font-family:var(--font-body);font-size:15.5px;font-weight:800">Pôle Diourbel-Louga
                         </h3>
                         <p>Diourbel · Louga</p>
-                    </a><a class="card accent-green" href="contact.html" style="text-decoration:none"><span
+                    </a><a class="card accent-green" href="{{ url('contact') }}" style="text-decoration:none"><span
                             class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -457,8 +457,8 @@
                         <h2>Entreprise, collectivité, partenaire : formons ensemble vos équipes.</h2>
                         <p>Plans de formation sur mesure, formation continue des salariés, apprentissage.</p>
                     </div>
-                    <div style="display:flex;gap:12px;flex-wrap:wrap"><a href="entreprises.html"
-                            class="btn btn-solid">Solutions entreprises</a><a href="contact.html"
+                    <div style="display:flex;gap:12px;flex-wrap:wrap"><a href="{{ url('entreprises') }}"
+                            class="btn btn-solid">Solutions entreprises</a><a href="{{ url('contact') }}"
                             class="btn btn-outline">Nous contacter</a></div>
                 </div>
             </div>

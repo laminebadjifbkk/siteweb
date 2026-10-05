@@ -44,19 +44,19 @@
                         @if ($active === 'apropos') aria-current="page" @endif>L'Office</a>
                     <ul class="submenu">
                         <li><a href="{{ url('/a-propos') }}">Présentation & gouvernance</a></li>
-                        <li><a href="{{ url('apropos') }}#mot-dg">Mot de la Directrice général</a></li>
+                        <li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li>
                         <li><a href="{{ url('missions') }}">Nos missions</a></li>
                         <li><a href="{{ url('poles-regionaux') }}">Pôles régionaux</a></li>
                         <li><a href="{{ url('documentation') }}">Documentation</a></li>
                     </ul>
                 </li>
-                <li class="has-sub"><a href="formations.html"
+                <li class="has-sub"><a href="{{ url('formations') }}"
                         @if ($active === 'formations') aria-current="page" @endif>Formations</a>
                     <ul class="submenu">
-                        <li><a href="formations.html">Catalogue des formations</a></li>
-                        <li><a href="certification.html">Certification & VAE</a></li>
-                        <li><a href="entreprises.html">Entreprises & employeurs</a></li>
-                        <li><a href="inscription.html">Pré-inscription en ligne</a></li>
+                        <li><a href="{{ url('formations') }}">Catalogue des formations</a></li>
+                        <li><a href="{{ url('certification') }}">Certification & VAE</a></li>
+                        <li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li>
+                        <li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ url('operateurs') }}"
@@ -65,9 +65,9 @@
                 <li><a href="{{ url('actualites') }}"
                         @if ($active === 'actualites') aria-current="page" @endif>Actualités</a>
                 </li>
-                <li><a href="marches-publics.html" @if ($active === 'marches') aria-current="page" @endif>Marchés
+                <li><a href="{{ url('marches-publics') }}" @if ($active === 'marches') aria-current="page" @endif>Marchés
                         publics</a></li>
-                <li><a href="contact.html" @if ($active === 'contact') aria-current="page" @endif>Contact</a></li>
+                <li><a href="{{ url('contact') }}" @if ($active === 'contact') aria-current="page" @endif>Contact</a></li>
             </ul>
         </nav>
         <div class="nav-actions">
@@ -104,23 +104,23 @@
             <li><a href="{{ route('home') }}">Accueil</a></li>
             <li><a href="{{ url('/a-propos') }}">L'Office</a>
                 <ul>
-                    <li><a href="a-propos.html#mot-dg">Mot de la Directrice générale</a></li>
-                    <li><a href="{{ url('missions') }}">Nos missions</a></li>
+                    <li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li>
+                    <li><a href="{{ url('missions')}}">Nos missions</a></li>
                     <li><a href="{{ url('poles-regionaux') }}">Pôles régionaux</a></li>
                     <li><a href="{{ url('documentation') }}">Documentation</a></li>
                 </ul>
             </li>
-            <li><a href="formations.html">Formations</a>
+            <li><a href="{{ url('formations') }}">Formations</a>
                 <ul>
-                    <li><a href="certification.html">Certification & VAE</a></li>
-                    <li><a href="entreprises.html">Entreprises & employeurs</a></li>
-                    <li><a href="inscription.html">Pré-inscription en ligne</a></li>
+                    <li><a href="{{ url('certification') }}">Certification & VAE</a></li>
+                    <li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li>
+                    <li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li>
                 </ul>
             </li>
             <li><a href="{{ url('operateurs') }}">Opérateurs</a></li>
             <li><a href="{{ url('actualites') }}">Actualités</a></li>
-            <li><a href="marches-publics.html">Marchés publics</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="{{ url('marches-publics') }}">Marchés publics</a></li>
+            <li><a href="{{ url('contact') }}">Contact</a></li>
         </ul>
         <a href="{{ url('/inscription') }}" class="btn btn-orange"
             style="width:100%;justify-content:center">S'inscrire

@@ -17,6 +17,11 @@ Route::get('/missions', [HomeController::class, 'missions'])->name('missions');
 Route::get('/documentation', [HomeController::class, 'documentation'])->name('documentation');
 Route::get('/actualites', [HomeController::class, 'actualites'])->name('actualites');
 Route::get('/operateurs', [HomeController::class, 'operateurs'])->name('operateurs');
+Route::get('/formations', [HomeController::class, 'formations'])->name('formations');
+Route::get('/marches-publics', [HomeController::class, 'marchespublics'])->name('marches-publics');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::get('/certification', [HomeController::class, 'certification'])->name('certification');
+Route::get('/entreprises', [HomeController::class, 'entreprises'])->name('entreprises');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
