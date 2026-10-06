@@ -90,7 +90,7 @@
                         <li aria-current="page">L'ONFP</li>
                     </ol>
                 </nav>
-                <h1>L'ONFP National de Formation Professionnelle</h1>
+                <h1>L'Office national de Formation professionnelle</h1>
                 <p>Depuis 1986, l'ONFP accompagne la qualification des travailleurs et des demandeurs d'emploi au
                     service du développement économique et social du Sénégal.</p>
             </div>
@@ -353,7 +353,7 @@
             </div>
             <div class="fcol">
                 <h4>Contact</h4>
-                <span><em class="todo">[Adresse du siège — après déménagement]</em><br>Dakar, Sénégal</span>
+                <span><em class="todo">Sipres 1, lot 2 - 2 voies Liberté 6, extension VDN</em><br>Dakar, Sénégal</span>
                 <a href="tel:+221338279251">+221 33 827 92 51</a>
                 <a href="mailto:onfp@onfp.sn">onfp@onfp.sn</a>
                 <h4 style="margin-top:22px">Lettre d'information</h4>

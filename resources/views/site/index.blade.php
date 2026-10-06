@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ONFP - Office national de Formation professionnelle</title>
     <meta name="description"
-        content="L'ONFP National de Formation Professionnelle du Sénégal : formations qualifiantes et certifiantes, certification, études, opérateurs et pôles régionaux.">
+        content="L'Office national de Formation professionnelle du Sénégal : formations qualifiantes et certifiantes, certification, études, opérateurs et pôles régionaux.">
     <meta name="theme-color" content="#00853F">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ONFP — Office National de Formation Professionnelle">
     <meta property="og:title" content="ONFP — Office National de Formation Professionnelle">
     <meta property="og:description"
-        content="L'ONFP National de Formation Professionnelle du Sénégal : formations qualifiantes et certifiantes, certification, études, opérateurs et pôles régionaux.">
+        content="L'Office national de Formation professionnelle du Sénégal : formations qualifiantes et certifiantes, certification, études, opérateurs et pôles régionaux.">
     <meta property="og:image" content="https://www.onfp.sn/assets/img/logo-onfp.png">
     <meta property="og:locale" content="fr_SN">
     <link rel="canonical" href="https://www.onfp.sn/">
@@ -40,7 +40,7 @@
                         <div class="hero-tag"><span class="dot"></span> La référence de la formation
                             professionnelle</div>
                         <h1>Former le Sénégal de demain.</h1>
-                        <p class="lead">L'ONFP National de Formation Professionnelle qualifie les travailleurs et
+                        <p class="lead">L'Office national de Formation professionnelle qualifie les travailleurs et
                             les demandeurs d'emploi sur l'ensemble du territoire national, pour une insertion
                             professionnelle durable.</p>
                         <div class="hero-ctas"><a href="{{ url('formations') }}" class="btn btn-solid">Découvrir nos

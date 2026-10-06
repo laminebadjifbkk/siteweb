@@ -268,7 +268,7 @@
             </div>
             <div class="fcol">
                 <h4>Contact</h4>
-                <span><em class="todo">[Adresse du siège — après déménagement]</em><br>Dakar, Sénégal</span>
+                <span><em class="todo">Sipres 1, lot 2 - 2 voies Liberté 6, extension VDN</em><br>Dakar, Sénégal</span>
                 <a href="tel:+221338279251">+221 33 827 92 51</a>
                 <a href="mailto:onfp@onfp.sn">onfp@onfp.sn</a>
                 <h4 style="margin-top:22px">Lettre d'information</h4>

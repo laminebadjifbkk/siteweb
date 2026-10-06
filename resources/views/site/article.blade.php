@@ -117,7 +117,7 @@
                         <p style="font-size:18px;color:var(--ink)"><strong>L'ONFP réunira apprenants, entreprises,
                                 opérateurs et partenaires pour plusieurs jours d'échanges, de démonstrations et de
                                 recrutements.</strong></p>
-                        <p>L'ONFP National de Formation Professionnelle organise, à la mi-novembre 2026, le Forum
+                        <p>L'Office national de Formation professionnelle organise, à la mi-novembre 2026, le Forum
                             national des compétences et de l'emploi au Centre international du commerce extérieur du
                             Sénégal (CICES), à Dakar. <em class="todo">[Dates exactes, horaires, thème officiel]</em>
                         </p>
@@ -248,7 +248,7 @@
             </div>
             <div class="fcol">
                 <h4>Contact</h4>
-                <span><em class="todo">[Adresse du siège — après déménagement]</em><br>Dakar, Sénégal</span>
+                <span><em class="todo">Sipres 1, lot 2 - 2 voies Liberté 6, extension VDN</em><br>Dakar, Sénégal</span>
                 <a href="tel:+221338279251">+221 33 827 92 51</a>
                 <a href="mailto:onfp@onfp.sn">onfp@onfp.sn</a>
                 <h4 style="margin-top:22px">Lettre d'information</h4>
