@@ -25,6 +25,7 @@
         href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 <body>
@@ -48,7 +49,7 @@
     <a class="brand" href="index.html" aria-label="ONFP — Accueil">
       <img src="assets/img/logo-onfp-240.webp" alt="Logo ONFP — Office National de Formation Professionnelle" width="64" height="67">
     </a>
-    <nav class="main" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="{{ url('/a-propos') }}">L'Office</a><ul class="submenu"><li><a href="{{ url('/a-propos') }}">Présentation & gouvernance</a></li><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="{{ url('missions') }}">Nos missions</a></li><li><a href="poles-regionaux.html">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li class="has-sub"><a href="{{ url('formations') }}">Formations</a><ul class="submenu"><li><a href="{{ url('formations') }}">Catalogue des formations</a></li><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}" aria-current="page">Contact</a></li></ul></nav>
+    <nav class="main" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="{{ url('/a-propos') }}">L'Office</a><ul class="submenu"><li><a href="{{ url('/a-propos') }}">Présentation & gouvernance</a></li><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="{{ url('missions') }}">Nos missions</a></li><li><a href="{{ route('poles-regionaux') }}">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li class="has-sub"><a href="{{ url('formations') }}">Formations</a><ul class="submenu"><li><a href="{{ url('formations') }}">Catalogue des formations</a></li><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}" aria-current="page">Contact</a></li></ul></nav>
     <div class="nav-actions">
       <button class="icon-btn" type="button" data-open-search aria-label="Rechercher"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
       <a href="{{ url('inscription') }}" class="nav-cta">S'inscrire à une formation</a>
@@ -65,7 +66,7 @@
       <img src="assets/img/logo-onfp-240.webp" alt="ONFP" style="height:52px;width:auto">
       <button class="icon-btn" type="button" data-close-drawer aria-label="Fermer le menu"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
-    <ul><li><a href="index.html">Accueil</a></li><li><a href="{{ url('/a-propos') }}">L'Office</a><ul><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="{{ url('missions') }}">Nos missions</a></li><li><a href="poles-regionaux.html">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li><a href="{{ url('formations') }}">Formations</a><ul><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}">Contact</a></li></ul>
+    <ul><li><a href="index.html">Accueil</a></li><li><a href="{{ url('/a-propos') }}">L'Office</a><ul><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="{{ url('missions') }}">Nos missions</a></li><li><a href="{{ route('poles-regionaux') }}">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li><a href="{{ url('formations') }}">Formations</a><ul><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}">Contact</a></li></ul>
     <a href="{{ url('inscription') }}" class="btn btn-orange" style="width:100%;justify-content:center">S'inscrire à une formation</a>
   </div>
 </div>
@@ -136,10 +137,19 @@
                     <div class="alert success" hidden style="margin-top:16px">Merci, votre message a bien été envoyé.
                         Nous vous répondrons dans les meilleurs délais.</div>
                     <h2 style="margin-top:56px">Nous trouver</h2>
-                    <div style="aspect-ratio:16/8;border-radius:var(--radius);border:1px solid var(--line);background:var(--paper-dim);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px"
+                    {{-- <div style="aspect-ratio:16/8;border-radius:var(--radius);border:1px solid var(--line);background:var(--paper-dim);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px"
                         class="muted">
                         <em class="todo">[Intégrer la carte (OpenStreetMap ou Google Maps) avec l'emplacement du
                             nouveau siège]</em>
+                    </div> --}}
+                    <div id="map-onfp"
+                        style="
+        aspect-ratio:16/8;
+        width:100%;
+        border-radius:var(--radius);
+        border:1px solid var(--line);
+        overflow:hidden;
+    ">
                     </div>
                 </div>
                 <aside>
@@ -151,7 +161,8 @@
                                     stroke-linejoin="round" aria-hidden="true">
                                     <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" />
                                     <circle cx="12" cy="9.5" r="2.5" />
-                                </svg> <em class="todo">[Adresse du nouveau siège]</em>, Dakar</li>
+                                </svg> <em class="todo">Sipres 1, lot 2 - 2 voies Liberté 6, extension VDN</em>,
+                                Dakar</li>
                             <li><svg viewBox="0 0 24 24" width="15" height="15" fill="none"
                                     stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                     stroke-linejoin="round" aria-hidden="true">
@@ -169,7 +180,7 @@
                                     stroke-linejoin="round" aria-hidden="true">
                                     <circle cx="12" cy="12" r="9" />
                                     <path d="M12 7v5l3 2" />
-                                </svg> Lundi – vendredi, <em class="todo">[horaires]</em></li>
+                                </svg> Lundi – vendredi, <em class="todo">08h-17h</em></li>
                         </ul>
                     </div>
                     <div class="aside-box">
@@ -185,13 +196,13 @@
                     <div class="aside-box">
                         <h3>Pôles régionaux</h3>
                         <ul>
-                            <li><a href="poles-regionaux.html#nord">Pôle Nord</a></li>
-                            <li><a href="poles-regionaux.html#nord-est">Pôle Nord-Est</a></li>
-                            <li><a href="poles-regionaux.html#est">Pôle Est</a></li>
-                            <li><a href="poles-regionaux.html#sud">Pôle Sud</a></li>
-                            <li><a href="poles-regionaux.html#centre">Pôle Centre</a></li>
-                            <li><a href="poles-regionaux.html#thies">Pôle Thiès</a></li>
-                            <li><a href="poles-regionaux.html#diourbel-louga">Pôle Diourbel-Louga</a></li>
+                            <li><a href="{{ route('poles-regionaux') }}#nord">Pôle Nord</a></li>
+                            <li><a href="{{ route('poles-regionaux') }}#nord-est">Pôle Nord-Est</a></li>
+                            <li><a href="{{ route('poles-regionaux') }}#est">Pôle Est</a></li>
+                            <li><a href="{{ route('poles-regionaux') }}#sud">Pôle Sud</a></li>
+                            <li><a href="{{ route('poles-regionaux') }}#centre">Pôle Centre</a></li>
+                            <li><a href="{{ route('poles-regionaux') }}#thies">Pôle Thiès</a></li>
+                            <li><a href="{{ route('poles-regionaux') }}#diourbel-louga">Pôle Diourbel-Louga</a></li>
                         </ul>
                     </div>
                 </aside>
@@ -237,7 +248,7 @@
                 <h4>L'Office</h4>
                 <a href="{{ url('/a-propos') }}">Présentation</a>
                 <a href="{{ url('missions') }}">Nos missions</a>
-                <a href="poles-regionaux.html">Pôles régionaux</a>
+                <a href="{{ route('poles-regionaux') }}">Pôles régionaux</a>
                 <a href="actualites.html">Actualités</a>
                 <a href="{{ url('marches-publics') }}">Marchés publics</a>
             </div>
@@ -282,7 +293,74 @@
         <button class="btn btn-solid btn-sm" type="button" data-cookie-ok>J'ai compris</button>
     </div>
     <script src="assets/js/main.js" defer></script> --}}
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Coordonnées du nouveau siège de l'ONFP
+            // À remplacer par les coordonnées GPS exactes
+            const latitude = 14.739823996894835;
+            const longitude = -17.46829199799239;
+
+            // Initialisation de la carte
+            const map = L.map('map-onfp').setView(
+                [latitude, longitude],
+                16
+            );
+
+            // Fond OpenStreetMap
+            L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
+                }
+            ).addTo(map);
+
+            // Marqueur ONFP
+            const marker = L.marker([
+                latitude,
+                longitude
+            ]).addTo(map);
+
+            // Popup
+            marker.bindPopup(`
+            <div style="min-width:220px;text-align:center;">
+                <strong style="font-size:16px;">
+                    ONFP
+                </strong>
+
+                <br>
+
+                <span>
+                    Office National de Formation Professionnelle
+                </span>
+
+                <br><br>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="
+                        display:inline-block;
+                        padding:7px 12px;
+                        border-radius:6px;
+                        background:#F28500;
+                        color:white;
+                        text-decoration:none;
+                    "
+                >
+                    Itinéraire
+                </a>
+            </div>
+        `);
+
+            // Afficher automatiquement la popup
+            marker.openPopup();
+
+        });
+    </script>
     @include('partials.footer')
 </body>
 

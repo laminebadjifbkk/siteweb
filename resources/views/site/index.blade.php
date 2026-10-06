@@ -370,9 +370,9 @@
                         <p>Sept pôles régionaux relaient l'action de l'ONFP au plus près des populations et des
                             entreprises.</p>
                     </div>
-                    <a href="poles-regionaux.html" class="link-more">Carte des pôles →</a>
+                    <a href="{{ route('poles-regionaux') }}" class="link-more">Carte des pôles →</a>
                 </div>
-                <div class="grid grid-4"><a class="card" href="poles-regionaux.html#nord"
+                <div class="grid grid-4"><a class="card" href="{{ route('poles-regionaux') }}#nord"
                         style="text-decoration:none"><span class="ico"><svg viewBox="0 0 24 24" width="22"
                                 height="22" fill="none" stroke="currentColor" stroke-width="1.8"
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -381,7 +381,7 @@
                             </svg></span>
                         <h3 style="font-family:var(--font-body);font-size:15.5px;font-weight:800">Pôle Nord</h3>
                         <p>Saint-Louis</p>
-                    </a><a class="card" href="poles-regionaux.html#nord-est" style="text-decoration:none"><span
+                    </a><a class="card" href="{{ route('poles-regionaux') }}#nord-est" style="text-decoration:none"><span
                             class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -390,7 +390,7 @@
                             </svg></span>
                         <h3 style="font-family:var(--font-body);font-size:15.5px;font-weight:800">Pôle Nord-Est</h3>
                         <p>Matam</p>
-                    </a><a class="card" href="poles-regionaux.html#est" style="text-decoration:none"><span
+                    </a><a class="card" href="{{ route('poles-regionaux') }}#est" style="text-decoration:none"><span
                             class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -399,7 +399,7 @@
                             </svg></span>
                         <h3 style="font-family:var(--font-body);font-size:15.5px;font-weight:800">Pôle Est</h3>
                         <p>Tambacounda · Kédougou</p>
-                    </a><a class="card" href="poles-regionaux.html#sud" style="text-decoration:none"><span
+                    </a><a class="card" href="{{ route('poles-regionaux') }}#sud" style="text-decoration:none"><span
                             class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -408,7 +408,7 @@
                             </svg></span>
                         <h3 style="font-family:var(--font-body);font-size:15.5px;font-weight:800">Pôle Sud</h3>
                         <p>Ziguinchor · Sédhiou · Kolda</p>
-                    </a><a class="card" href="poles-regionaux.html#centre" style="text-decoration:none"><span
+                    </a><a class="card" href="{{ route('poles-regionaux') }}#centre" style="text-decoration:none"><span
                             class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -417,7 +417,7 @@
                             </svg></span>
                         <h3 style="font-family:var(--font-body);font-size:15.5px;font-weight:800">Pôle Centre</h3>
                         <p>Kaolack · Fatick · Kaffrine</p>
-                    </a><a class="card" href="poles-regionaux.html#thies" style="text-decoration:none"><span
+                    </a><a class="card" href="{{ route('poles-regionaux') }}#thies" style="text-decoration:none"><span
                             class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
@@ -426,7 +426,7 @@
                             </svg></span>
                         <h3 style="font-family:var(--font-body);font-size:15.5px;font-weight:800">Pôle Thiès</h3>
                         <p>Thiès</p>
-                    </a><a class="card" href="poles-regionaux.html#diourbel-louga"
+                    </a><a class="card" href="{{ route('poles-regionaux') }}#diourbel-louga"
                         style="text-decoration:none"><span class="ico"><svg viewBox="0 0 24 24" width="22"
                                 height="22" fill="none" stroke="currentColor" stroke-width="1.8"
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
