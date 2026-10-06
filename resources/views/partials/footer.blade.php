@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="fcol">
-            <h4>L'Office</h4>
+            <h4>L'ONFP</h4>
             <a href="{{ url('/a-propos') }}">Présentation</a>
             <a href="{{ url('missions')}}">Nos missions</a>
             <a href="{{ url('poles-regionaux') }}">Pôles régionaux</a>

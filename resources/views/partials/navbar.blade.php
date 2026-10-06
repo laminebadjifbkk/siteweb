@@ -41,7 +41,7 @@
                         @if ($active === 'accueil') aria-current="page" @endif>Accueil</a>
                 </li>
                 <li class="has-sub"><a href="{{ url('/a-propos') }}"
-                        @if ($active === 'apropos') aria-current="page" @endif>L'Office</a>
+                        @if ($active === 'apropos') aria-current="page" @endif>L'ONFP</a>
                     <ul class="submenu">
                         <li><a href="{{ url('/a-propos') }}">Présentation & gouvernance</a></li>
                         <li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li>
@@ -102,7 +102,7 @@
         </div>
         <ul>
             <li><a href="{{ route('home') }}">Accueil</a></li>
-            <li><a href="{{ url('/a-propos') }}">L'Office</a>
+            <li><a href="{{ url('/a-propos') }}">L'ONFP</a>
                 <ul>
                     <li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li>
                     <li><a href="{{ url('missions')}}">Nos missions</a></li>

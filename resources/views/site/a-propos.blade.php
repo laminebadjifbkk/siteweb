@@ -48,7 +48,7 @@
     <a class="brand" href="index.html" aria-label="ONFP — Accueil">
       <img src="assets/img/logo-onfp-240.webp" alt="Logo ONFP — Office National de Formation Professionnelle" width="64" height="67">
     </a>
-    <nav class="main" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="{{ url('/a-propos') }}" aria-current="page">L'Office</a><ul class="submenu"><li><a href="{{ url('/a-propos') }}">Présentation & gouvernance</a></li><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="{{ url('missions') }}">Nos missions</a></li><li><a href="{{ route('poles-regionaux') }}">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li class="has-sub"><a href="{{ url('formations') }}">Formations</a><ul class="submenu"><li><a href="{{ url('formations') }}">Catalogue des formations</a></li><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}">Contact</a></li></ul></nav>
+    <nav class="main" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="{{ url('/a-propos') }}" aria-current="page">L'ONFP</a><ul class="submenu"><li><a href="{{ url('/a-propos') }}">Présentation & gouvernance</a></li><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="{{ url('missions') }}">Nos missions</a></li><li><a href="{{ route('poles-regionaux') }}">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li class="has-sub"><a href="{{ url('formations') }}">Formations</a><ul class="submenu"><li><a href="{{ url('formations') }}">Catalogue des formations</a></li><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}">Contact</a></li></ul></nav>
     <div class="nav-actions">
       <button class="icon-btn" type="button" data-open-search aria-label="Rechercher"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
       <a href="{{ url('inscription') }}" class="nav-cta">S'inscrire à une formation</a>
@@ -65,7 +65,7 @@
       <img src="assets/img/logo-onfp-240.webp" alt="ONFP" style="height:52px;width:auto">
       <button class="icon-btn" type="button" data-close-drawer aria-label="Fermer le menu"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
-    <ul><li><a href="index.html">Accueil</a></li><li><a href="{{ url('/a-propos') }}">L'Office</a><ul><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="{{ url('missions') }}">Nos missions</a></li><li><a href="{{ route('poles-regionaux') }}">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li><a href="{{ url('formations') }}">Formations</a><ul><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}">Contact</a></li></ul>
+    <ul><li><a href="index.html">Accueil</a></li><li><a href="{{ url('/a-propos') }}">L'ONFP</a><ul><li><a href="{{ url('/a-propos') }}#mot-dg">Mot de la Directrice générale</a></li><li><a href="{{ url('missions') }}">Nos missions</a></li><li><a href="{{ route('poles-regionaux') }}">Pôles régionaux</a></li><li><a href="{{ url('documentation') }}">Documentation</a></li></ul></li><li><a href="{{ url('formations') }}">Formations</a><ul><li><a href="{{ url('certification') }}">Certification & VAE</a></li><li><a href="{{ url('entreprises') }}">Entreprises & employeurs</a></li><li><a href="{{ url('inscription') }}">Pré-inscription en ligne</a></li></ul></li><li><a href="operateurs.html">Opérateurs</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="{{ url('marches-publics') }}">Marchés publics</a></li><li><a href="{{ url('contact') }}">Contact</a></li></ul>
     <a href="{{ url('inscription') }}" class="btn btn-orange" style="width:100%;justify-content:center">S'inscrire à une formation</a>
   </div>
 </div>
@@ -87,10 +87,10 @@
                 <nav class="breadcrumb" aria-label="Fil d'Ariane">
                     <ol>
                         <li><a href="index.html">Accueil</a></li>
-                        <li aria-current="page">L'Office</li>
+                        <li aria-current="page">L'ONFP</li>
                     </ol>
                 </nav>
-                <h1>L'Office National de Formation Professionnelle</h1>
+                <h1>L'ONFP National de Formation Professionnelle</h1>
                 <p>Depuis 1986, l'ONFP accompagne la qualification des travailleurs et des demandeurs d'emploi au
                     service du développement économique et social du Sénégal.</p>
             </div>
@@ -112,7 +112,7 @@
                             (ONFP) est l'outil de l'État du Sénégal pour le développement de la formation
                             professionnelle et l'amélioration de la qualification des travailleurs et des demandeurs
                             d'emploi.</p>
-                        <p>L'Office intervient dans cinq grands domaines : l'étude et la recherche sur l'emploi et les
+                        <p>L'ONFP intervient dans cinq grands domaines : l'étude et la recherche sur l'emploi et les
                             qualifications, la formation et la qualification, l'évaluation et la certification, la
                             documentation et l'édition, ainsi que la maîtrise d'ouvrage déléguée pour la construction et
                             l'équipement de structures de formation.</p>
@@ -335,7 +335,7 @@
                         </svg></a></div>
             </div>
             <div class="fcol">
-                <h4>L'Office</h4>
+                <h4>L'ONFP</h4>
                 <a href="{{ url('/a-propos') }}">Présentation</a>
                 <a href="{{ url('missions') }}">Nos missions</a>
                 <a href="{{ route('poles-regionaux') }}">Pôles régionaux</a>
