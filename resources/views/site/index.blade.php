@@ -88,10 +88,10 @@
                     <div class="num">7</div>
                     <div class="lbl">Pôles régionaux couvrant le territoire national</div>
                 </div>
-                <div class="stat">
+                {{-- <div class="stat">
                     <div class="num"><em class="todo">[chiffre]</em></div>
                     <div class="lbl">Personnes formées depuis la création — chiffre à fournir par la Direction</div>
-                </div>
+                </div> --}}
             </div>
         </div>
 
