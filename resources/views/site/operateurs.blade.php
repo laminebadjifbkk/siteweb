@@ -111,7 +111,7 @@
                     <div class="grid grid-2">
                         <div class="card accent-green">
                             <div class="stat" style="padding:0;border:none">
-                                <div class="num"><em class="todo">[n]</em></div>
+                                <div class="num"><em class="todo">427</em></div>
                                 <div class="lbl">Opérateurs agréés</div>
                             </div>
                         </div>
@@ -123,7 +123,7 @@
                         </div>
                         <div class="card accent-red">
                             <div class="stat" style="padding:0;border:none">
-                                <div class="num"><em class="todo">[n]</em></div>
+                                <div class="num"><em class="todo">150</em></div>
                                 <div class="lbl">Sessions suivies en 2026</div>
                             </div>
                         </div>
