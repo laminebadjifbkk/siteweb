@@ -186,11 +186,11 @@
                     <div class="aside-box">
                         <h3>Contacts utiles</h3>
                         <ul>
-                            <li>Formations : <em class="todo">[e-mail]</em></li>
-                            <li>Entreprises : <em class="todo">[e-mail]</em></li>
-                            <li>Marchés publics : <em class="todo">[e-mail]</em></li>
-                            <li>Communication / presse : <em class="todo">[e-mail]</em></li>
-                            <li>Support SIGOF : <em class="todo">[e-mail]</em></li>
+                            <li>Formations : <em class="todo">onfp@onfp.sn</em></li>
+                            <li>Entreprises : <em class="todo">onfp@onfp.sn</em></li>
+                            <li>Marchés publics : <em class="todo">onfp@onfp.sn</em></li>
+                            <li>Communication / presse : <em class="todo">onfp@onfp.sn</em></li>
+                            <li>Support SIGOF : <em class="todo">onfp@onfp.sn</em></li>
                         </ul>
                     </div>
                     <div class="aside-box">
