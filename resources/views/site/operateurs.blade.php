@@ -129,7 +129,7 @@
                         </div>
                         <div class="card accent-orange">
                             <div class="stat" style="padding:0;border:none">
-                                <div class="num">9</div>
+                                <div class="num">15</div>
                                 <div class="lbl">Domaines de formation</div>
                             </div>
                         </div>
