@@ -77,7 +77,7 @@
                     <circle cx="11" cy="11" r="7" />
                     <path d="m20 20-3.5-3.5" />
                 </svg></button>
-            <a href="{{ url('/inscription') }}" class="nav-cta">S'inscrire à une formation</a>
+            {{-- <a href="{{ url('/inscription') }}" class="nav-cta">S'inscrire à une formation</a> --}}
             <button class="icon-btn burger" type="button" aria-label="Ouvrir le menu" aria-controls="drawer"
                 aria-expanded="false"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"
                     stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
